@@ -17,6 +17,7 @@ export default (() => {
             project.todos = projectData.todos.map(todoData => {
                 const todo = new Todo(todoData.title, todoData.description, todoData.dueDate, todoData.priority);
                 todo.id = todoData.id;
+                todo.completed = todoData.completed;
 
                 return todo;
             });
