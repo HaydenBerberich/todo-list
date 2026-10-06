@@ -6,6 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="sidebar">
+            <div id="top">
+                <h1>Projects</h1>
+                <button id="add-project">+</button>
+                <dialog id="project-dialog">
+                    <h2>Add Project</h2>
+                    <form id="project-form">
+                        <label for="projectTitle">Title:</label>
+                        <input id="projectTitle" type="text" name="title">
+                        <button type="submit">Save</button>
+                    </form>
+                </dialog>
+            </div>
+            <div id="projects">
+            </div>
+        </div>
+        <div id="main">
+            <div id="display"></div>
+            <dialog id="todo-dialog">
+                <h2>Add/Edit Todo</h2>
+                <form id="todo-form">
+                    <label for="todoTitle">Title: </label>
+                    <input id="todoTitle" type="text" name="title">
+                    <label for="dueDate">Due Date:</label>
+                    <input id="dueDate" type="date" name="dueDate">
+                    <label for="priority">Priority:</label>
+                    <input id="priority" type="number" name="priority">
+                    <label for="description">Description:</label>
+                    <input id="description" type="text" name="description">
+                    <button type="submit">Save</button>
+                </form>
+            </dialog>
+        </div>
+    </div>
 </body>
 </html>
